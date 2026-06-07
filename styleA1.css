@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Flexo", sans-serif;
+}
+
+html ,body {
+    height: 100%;
+    width: 100%;
+    padding: 10px 55px;
+    overflow-y: hidden;   /*By Mistake my default browser zoom was at 150% so to hide scroll bar*/
+}
+
+body {
+    zoom: 1.5;
+    background-color: rgb(247, 247, 247);  /*By Mistake my default browser zoom was at 150% to show the exact page at zoom 100% i make it zoom:1.5; which is 150%*/
+}
+
+
+.main {
+    position: relative;
+    height: 90%;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.208);
+    background-color: rgb(249, 232, 180);
+}
+
+.main #Pikachu {
+    height: 310PX;
+    width: 300PX;
+    position: absolute;
+    top: 15%;
+    left: 43%;
+    z-index: 100;
+}
+
+.innermain {
+    height: 100%;
+    width: 60%;
+    background-color: rgb(251, 197, 11);
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    /* z-index: -1; */
+}
+
+nav {
+    height: 6%;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.innermain img {
+  height: 2rem;
+}
+
+.innermain i {
+    position: absolute;
+    right: 3%;
+    font-size: 1.5rem;
+}
+
+.innermain .mainContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 20px 10px 40px;
+}
+
+
+
+.innermain .mainContent h1 {
+    font-weight:750;
+    font-size: 3.8rem;
+}
+
+.innermain .mainContent p {
+    line-height: 15px;
+    font-size: xx-small;
+    letter-spacing: 0.4px;
+    font-weight: 450;
+}
+
+.innermain .mainContent h4 {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+.innermain .mainContent h4 .line {
+    width: 25px;
+    height: 2px;
+    background-color: black;
+}
+
+.innermain .mainContent #gen {
+
+   font-size: x-small;
+   font-weight: 600;
+   letter-spacing:3px;
+   padding-left: 5px;
+}
+
+.innermain .ball {
+    position: absolute;
+    bottom: -17%;
+    left: 2%;
+    height: 12rem;
+    width:11rem;
+    padding: 10px 20px 0px 0px;
+    opacity: 0.1;
+    clip-path: inset(0 0 36% 0)
+}
+
+.main .slides {
+    position: absolute;
+    top: 43%;
+    right:3% ;
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.main .slides .box {
+     height: 0.4rem;
+     width: 0.4rem;
+     border-radius: 50%;
+     background-color: rgb(251, 197, 11);
+
+}
+
+#current {
+    background-color: black ;
+    height: 0.5rem;
+    width: 0.5rem;
+}
